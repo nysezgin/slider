@@ -38,14 +38,14 @@ export default function Slider({isMobile}) {
             <div className="slider__info-wrapper">
               <h2 className="slider__title">{title}</h2>
               <p className="slider__info">{info}</p>
-            </div>
-          </div>
-        );
-      })}
       <a href="/" className="slider__shop-link">
         SHOP NOW
         <ArrowIcon className="slider__shop-icon" />
       </a>
+            </div>
+          </div>
+        );
+      })}
       <div className="slider__button-wrapper">
         <button
           type="button"
