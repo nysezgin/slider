@@ -26,6 +26,7 @@ $main-title-color: hsl(0, 0%, 27%);
 // Other Variables
 $text-margin: 50px;
 $title-bottom-margin: 10px;
+$button-wrapper-width: 108px;
 $desktop-about-img-width: 30%;
 
 //// Extends
@@ -197,7 +198,7 @@ main {
 
     @include desktop {
       display: grid;
-      grid-template-columns: calc(70% - 108px) auto;
+      grid-template-columns: calc(100% - #{$button-wrapper-width} - #{$desktop-about-img-width}) auto;
     }
   }
 
@@ -224,6 +225,7 @@ main {
 
   &__button-wrapper {
     position: absolute;
+    width: $button-wrapper-width;
     top: 306px;
     right: 0;
 
